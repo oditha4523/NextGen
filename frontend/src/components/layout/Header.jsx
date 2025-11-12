@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Header.css';
 
 const Header = () => {
   const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
@@ -46,15 +47,15 @@ const Header = () => {
       </div>
 
       {/* Header */}
-      <header className="navbar navbar-expand-lg bg-primary-custom">
+      <header className="header-navbar">
         <div className="container">
-          <a data-aos="fade-right" className="navbar-brand text-white ms-2 pt-0" href="#">
-            <img src="/assets/image/logo.png" style={{width: '110px'}} alt="" />
+          <a data-aos="fade-right" className="navbar-brand" href="#">
+            <img src="/assets/image/logo.png" alt="Logo" />
           </a>
 
           {/* Button Burger Menu */}
           <button 
-            className="navbar-toggler border-0" 
+            className="navbar-toggler" 
             type="button" 
             aria-controls="navbarNav" 
             aria-expanded="false" 
@@ -68,109 +69,101 @@ const Header = () => {
 
           {/* Sidebar for mobile */}
           <nav className={`offcanvas-menu ${isOffcanvasOpen ? 'show' : ''}`} id="navbarNav">
-            <div className="offcanvas-header border-0">
-              <img className="offcanvas-title" src="/assets/image/logo.png" style={{width: '130px'}} alt="" />
+            <div className="offcanvas-header">
+              <img className="offcanvas-title" src="/assets/image/logo.png" alt="Logo" />
               <button type="button" className="btn-close" aria-label="Close" onClick={closeOffcanvas}></button>
             </div>
-            <ul className="navbar-nav mx-3">
+            <ul className="navbar-nav">
               <li className="nav-item dropdown">
-                <a className="nav-link font-krona-one text-uppercase text-white dropdown-toggle" style={{fontSize: '12px'}} href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Home 1
                 </a>
-                <ul className="dropdown-menu bg-primary-custom" style={{border: 'none'}} aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item font-krona-one text-uppercase text-white" style={{fontSize: '12px'}} href="index.html">Home 1</a>
+                    <a className="dropdown-item" href="index.html">Home 1</a>
                   </li> 
                   <li>
-                    <a className="dropdown-item font-krona-one text-uppercase text-white" style={{fontSize: '12px'}} href="Home2.html">Home 2</a>
+                    <a className="dropdown-item" href="Home2.html">Home 2</a>
                   </li>
                   <li>
-                    <a className="dropdown-item font-krona-one text-uppercase text-white" style={{fontSize: '12px'}} href="Home3.html">Home 3</a>
+                    <a className="dropdown-item" href="Home3.html">Home 3</a>
                   </li>
                   <li>
-                    <a className="dropdown-item font-krona-one text-uppercase text-white" style={{fontSize: '12px'}} href="LandingPage.html">Landing Page</a>
+                    <a className="dropdown-item" href="LandingPage.html">Landing Page</a>
                   </li>
                 </ul>
               </li>
 
               <li className="nav-item dropdown">
-                <a className="nav-link font-krona-one text-uppercase text-white dropdown-toggle" style={{fontSize: '12px'}} href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Pages
                 </a>
-                <ul className="dropdown-menu bg-primary-custom" style={{border: 'none'}} aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item font-krona-one text-uppercase text-white" style={{fontSize: '12px'}} href="About.html">About</a>
+                    <a className="dropdown-item" href="About.html">About</a>
                   </li>
                   <li>
-                    <a className="dropdown-item font-krona-one text-uppercase text-white" style={{fontSize: '12px'}} href="Pricing.html">Pricing</a>
+                    <a className="dropdown-item" href="Pricing.html">Pricing</a>
                   </li>
                   <li>
-                    <a className="dropdown-item font-krona-one text-uppercase text-white" style={{fontSize: '12px'}} href="Single-work.html">Single Work</a>
+                    <a className="dropdown-item" href="Single-work.html">Single Work</a>
                   </li>
                   <li>
-                    <a className="dropdown-item font-krona-one text-uppercase text-white" style={{fontSize: '12px'}} href="Reviews.html">Reviews</a>
+                    <a className="dropdown-item" href="Reviews.html">Reviews</a>
                   </li>
                   <li>
-                    <a className="dropdown-item font-krona-one text-uppercase text-white" style={{fontSize: '12px'}} href="Blog.html">Blog</a>
+                    <a className="dropdown-item" href="Blog.html">Blog</a>
                   </li>
                   <li>
-                    <a className="dropdown-item font-krona-one text-uppercase text-white" style={{fontSize: '12px'}} href="Post.html">Post</a>
+                    <a className="dropdown-item" href="Post.html">Post</a>
                   </li>
                   <li>
-                    <a className="dropdown-item font-krona-one text-uppercase text-white" style={{fontSize: '12px'}} href="404.html">404</a>
+                    <a className="dropdown-item" href="404.html">404</a>
                   </li>
                 </ul>
               </li>
 
               <li className="nav-item dropdown">
-                <a className="nav-link font-krona-one text-uppercase text-white dropdown-toggle" style={{fontSize: '12px'}} href="Services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link dropdown-toggle" href="Services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Services
                 </a>
-                <ul className="dropdown-menu bg-primary-custom" style={{border: 'none'}} aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <div>
-                    <h6 className="text-white font-krona-one fw-light" style={{fontSize: '12px'}}>
-                      BRANDING
-                    </h6>
-                    <a className="dropdown-item text-white" href="#">Design</a>
-                    <a className="dropdown-item text-white" href="#">Graphic</a>
-                    <a className="dropdown-item text-white" href="#">Ideas</a>
-                    <a className="dropdown-item text-white" href="#">Brainstorm</a>
+                    <h6>BRANDING</h6>
+                    <a className="dropdown-item" href="#">Design</a>
+                    <a className="dropdown-item" href="#">Graphic</a>
+                    <a className="dropdown-item" href="#">Ideas</a>
+                    <a className="dropdown-item" href="#">Brainstorm</a>
                   </div>
                   <div>
-                    <h6 className="text-white font-krona-one fw-light mt-3" style={{fontSize: '12px'}}>
-                      MARKETING
-                    </h6>
-                    <a className="dropdown-item text-white" href="#">Email</a>
-                    <a className="dropdown-item text-white" href="#">Content</a>
-                    <a className="dropdown-item text-white" href="#">Digital</a>
-                    <a className="dropdown-item text-white" href="#">All-in-One</a>
+                    <h6>MARKETING</h6>
+                    <a className="dropdown-item" href="#">Email</a>
+                    <a className="dropdown-item" href="#">Content</a>
+                    <a className="dropdown-item" href="#">Digital</a>
+                    <a className="dropdown-item" href="#">All-in-One</a>
                   </div>
                   <div>
-                    <h6 className="text-white font-krona-one fw-light mt-3" style={{fontSize: '12px'}}>
-                      STRATEGY
-                    </h6>
-                    <a className="dropdown-item text-white" href="#">Social Media</a>
-                    <a className="dropdown-item text-white" href="#">Search Engine</a>
-                    <a className="dropdown-item text-white" href="#">Social Ads</a>
-                    <a className="dropdown-item text-white" href="#">Affiliate</a>
+                    <h6>STRATEGY</h6>
+                    <a className="dropdown-item" href="#">Social Media</a>
+                    <a className="dropdown-item" href="#">Search Engine</a>
+                    <a className="dropdown-item" href="#">Social Ads</a>
+                    <a className="dropdown-item" href="#">Affiliate</a>
                   </div>
                   <div>
-                    <h6 className="text-white font-krona-one fw-light mt-3" style={{fontSize: '12px'}}>
-                      WEBSITE
-                    </h6>
-                    <a className="dropdown-item text-white" href="#">Web Design</a>
-                    <a className="dropdown-item text-white" href="#">Maintenance</a>
-                    <a className="dropdown-item text-white" href="#">Copywriting</a>
-                    <a className="dropdown-item text-white" href="#">Media</a>
+                    <h6>WEBSITE</h6>
+                    <a className="dropdown-item" href="#">Web Design</a>
+                    <a className="dropdown-item" href="#">Maintenance</a>
+                    <a className="dropdown-item" href="#">Copywriting</a>
+                    <a className="dropdown-item" href="#">Media</a>
                   </div>
                 </ul>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link font-krona-one text-uppercase text-white" style={{fontSize: '12px'}} href="OurWorks.html">our works</a>
+                <a className="nav-link" href="OurWorks.html">our works</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link font-krona-one text-uppercase text-white" style={{fontSize: '12px'}} href="Contact.html">contact</a>
+                <a className="nav-link" href="Contact.html">contact</a>
               </li>
             </ul>
           </nav>

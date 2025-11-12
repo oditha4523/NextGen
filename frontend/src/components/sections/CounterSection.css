@@ -1,0 +1,70 @@
+/* CounterSection Styles */
+.counter-section-wrapper {
+  padding: 4rem 0;
+}
+
+.counter-section {
+  background-image: url('/assets/image/counter-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+
+.counter-section .color-cover {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4rem 0;
+}
+
+.counter-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.counter-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 -15px 3rem -15px;
+  font-family: 'Krona One', sans-serif;
+}
+
+.counter-section .counter-col {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 576px) {
+  .counter-section .counter-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .counter-section .counter-col {
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-bottom: 0;
+  }
+}
+
+.counter-section .counter-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.counter-section .counter-label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.counter-section .counter-plus {
+  color: #c4fb6d;
+}

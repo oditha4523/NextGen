@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './CounterSection.css';
 
 const CounterSection = () => {
   const [counters, setCounters] = useState({
@@ -42,44 +43,45 @@ const CounterSection = () => {
   }, []);
 
   return (
-    <div className="custom-padding">
-      <div className="section-counter creative-section text-white">
-        <div className="container">
-          {/* Row */}
-          <div className="row text-center mb-5 font-krona-one">
-            {/* Col 1 */}
-            <div data-aos="fade-up" data-aos-delay="200" className="col-12 col-md-3 mb-5 mb-md-0">
-              <div className="mb-0 d-flex align-items-center justify-content-center">
-                <h3 className="display-6">{counters.projects}</h3>
-                <h3 className="display-6">K</h3>
+    <div className="counter-section-wrapper">
+      <div className="counter-section">
+        <div className="color-cover">
+          <div className="container">
+            {/* Row */}
+            <div className="row">
+              {/* Col 1 */}
+              <div data-aos="fade-up" data-aos-delay="200" className="counter-col">
+                <div className="counter-number">
+                  {counters.projects}<span className="counter-plus">K</span>
+                </div>
+                <p className="counter-label">
+                  Project
+                </p>
               </div>
-              <p className="text-secondary font-krona-one" style={{fontSize: '12px'}}>
-                Project
-              </p>
-            </div>
 
-            {/* Col 2 */}
-            <div data-aos="fade-up" data-aos-delay="200" className="col-12 col-md-3 mb-5 mb-md-0">
-              <h3 className="counter display-6 mb-0">{counters.clients}</h3>
-              <p className="text-secondary font-krona-one" style={{fontSize: '12px'}}>
-                Clients
-              </p>
-            </div>
+              {/* Col 2 */}
+              <div data-aos="fade-up" data-aos-delay="200" className="counter-col">
+                <h3 className="counter-number">{counters.clients}</h3>
+                <p className="counter-label">
+                  Clients
+                </p>
+              </div>
 
-            {/* Col 3 */}
-            <div data-aos="fade-up" data-aos-delay="400" className="col-12 col-md-3 mb-5 mb-md-0">
-              <h3 className="counter display-6 mb-0">{counters.countries}</h3>
-              <p className="text-secondary font-krona-one" style={{fontSize: '12px'}}>
-                Countries
-              </p>
-            </div>
+              {/* Col 3 */}
+              <div data-aos="fade-up" data-aos-delay="400" className="counter-col">
+                <h3 className="counter-number">{counters.countries}</h3>
+                <p className="counter-label">
+                  Countries
+                </p>
+              </div>
 
-            {/* Col 4 */}
-            <div data-aos="fade-up" data-aos-delay="600" className="col-12 col-md-3">
-              <h3 className="counter display-6 mb-0">{counters.creatives}</h3>
-              <p className="text-secondary font-krona-one" style={{fontSize: '12px'}}>
-                Creatives
-              </p>
+              {/* Col 4 */}
+              <div data-aos="fade-up" data-aos-delay="600" className="counter-col">
+                <h3 className="counter-number">{counters.creatives}</h3>
+                <p className="counter-label">
+                  Creatives
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ApproachSection.css';
 
 const ApproachSection = () => {
   const [activeItem, setActiveItem] = useState('monitor');
@@ -14,61 +15,52 @@ const ApproachSection = () => {
   };
 
   return (
-    <section className="margin-c bg-hero text-white px-2 px-md-0">
-      <div className="color-cover custom-padding">
+    <section className="approach-section">
+      <div className="color-cover">
         <div className="container">
           {/* Row */}
-          <div className="row align-items-center">
+          <div className="row">
             {/* Col 1 */}
-            <div className="col-md-6 position-relative box-image-approach">
-              <div data-aos="fade-up" className="image-position-approach-2">
-                <img src="/assets/image/20.jpg" style={{maxWidth: '100%', maxHeight: '100%'}} alt="" />
-              </div>
-              <div data-aos="fade-right" className="image-position-approach-1">
-                <img 
-                  src="/assets/image/13.jpg" 
-                  style={{
-                    maxWidth: '100%',
-                    maxHeight: '100%',
-                    backgroundSize: 'cover',
-                  }} 
-                  alt="" 
-                />
+            <div className="image-col">
+              <div className="box-image-approach">
+                <div data-aos="fade-up" className="image-position-2">
+                  <img src="/assets/image/20.jpg" alt="Approach image 2" />
+                </div>
+                <div data-aos="fade-right" className="image-position-1">
+                  <img src="/assets/image/13.jpg" alt="Approach image 1" />
+                </div>
               </div>
             </div>
             {/* Col 2 */}
-            <div className="col-md-6 padding-left-c margin-short-c">
-              <h2 data-aos="fade-up" className="text-uppercase font-krona-one h2-text">
+            <div className="content-col">
+              <h2 data-aos="fade-up" className="section-title">
                 Approach
               </h2>
-              <p data-aos="fade-up" data-aos-delay="200">
+              <p data-aos="fade-up" data-aos-delay="200" className="section-description">
                 Ut elit tellus, luctus nec ullamcorper. Lorem ipsum dolor sit amet. Ut elit tellus, luctus nec ullamcorper.
               </p>
-              <div data-aos="fade-up" data-aos-delay="400" className="d-flex gap-3 my-3 font-krona-one">
+              <div data-aos="fade-up" data-aos-delay="400" className="approach-tabs">
                 <span 
-                  className={`text-white clickable-item ${activeItem === 'monitor' ? 'active-item' : ''} text`}
+                  className={`clickable-item ${activeItem === 'monitor' ? 'active-item' : ''}`}
                   onClick={() => handleItemClick('monitor')}
-                  style={{cursor: 'pointer'}}
                 >
                   Monitor
                 </span>
                 <span 
-                  className={`text-white clickable-item ${activeItem === 'analyze' ? 'active-item' : ''}`}
+                  className={`clickable-item ${activeItem === 'analyze' ? 'active-item' : ''}`}
                   onClick={() => handleItemClick('analyze')}
-                  style={{cursor: 'pointer'}}
                 >
                   Analyze
                 </span>
                 <span 
-                  className={`text-white clickable-item ${activeItem === 'multiply' ? 'active-item' : ''}`}
+                  className={`clickable-item ${activeItem === 'multiply' ? 'active-item' : ''}`}
                   onClick={() => handleItemClick('multiply')}
-                  style={{cursor: 'pointer'}}
                 >
                   Multiply
                 </span>
               </div>
-              <div>
-                <p data-aos="fade-up" className="content-paragraph mb-5">
+              <div className="approach-content">
+                <p data-aos="fade-up">
                   {approachItems[activeItem]}
                 </p>
               </div>
@@ -78,10 +70,10 @@ const ApproachSection = () => {
                   data-aos="fade-up"
                   data-aos-delay="700"
                   href="Services.html"
-                  className="btn-color button-padding text-uppercase font-krona-one text-black text-decoration-none button-text"
+                  className="cta-button"
                 >
-                  <span className="me-2">Process</span>
-                  <i className="fa-solid fa-arrow-right" style={{color: '#232520'}}></i>
+                  <span>Process</span>
+                  <i className="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
             </div>

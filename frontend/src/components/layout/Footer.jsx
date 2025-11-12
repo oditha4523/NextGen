@@ -1,4 +1,5 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
   const menuLinks = [
@@ -15,51 +16,50 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="footer-section py-5">
+    <footer className="footer-section">
       <div className="container">
         {/* Row */}
-        <div className="row mb-5">
+        <div className="row">
           {/* Col 1 30*/}
-          <div className="col-lg-4 mb-5 mb-md-0 pe-lg-5">
-            <img data-aos="fade-up" src="/assets/image/logo.png" className="mb-3" alt="" />
-            <p data-aos="fade-up" data-aos-delay="200" className="text-light my-3">
+          <div className="footer-col-1">
+            <img data-aos="fade-up" src="/assets/image/logo.png" className="footer-logo" alt="Logo" />
+            <p data-aos="fade-up" data-aos-delay="200" className="footer-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <div data-aos="fade-up" data-aos-delay="300" className="d-flex gap-3 mt-5">
-              <a href="#"><i className="fa-brands fa-facebook" style={{color: '#c4fb6d'}}></i></a>
-              <a href="#"><i className="fa-brands fa-twitter" style={{color: '#c4fb6d'}}></i></a>
-              <a href="#"><i className="fa-brands fa-youtube" style={{color: '#c4fb6d'}}></i></a>
+            <div data-aos="fade-up" data-aos-delay="300" className="social-links">
+              <a href="#"><i className="fa-brands fa-facebook"></i></a>
+              <a href="#"><i className="fa-brands fa-twitter"></i></a>
+              <a href="#"><i className="fa-brands fa-youtube"></i></a>
             </div>
           </div>
           {/* Col 2 30*/}
-          <div className="col-lg-4 mb-5 mb-md-0 pe-lg-5">
-            <h5 data-aos="fade-up" className="text-uppercase mb-3 font-krona-one footer-text-h-c fw-light">
+          <div className="footer-col-2">
+            <h5 data-aos="fade-up" className="footer-heading">
               OFFICE
             </h5>
-            <p data-aos="fade-up" data-aos-delay="200" className="text-light mt-4 mb-3">
+            <p data-aos="fade-up" data-aos-delay="200" className="office-address">
               Amphitheatre Parkway,<br />Mountain View, California, 94043
             </p>
-            <p data-aos="fade-up" data-aos-delay="200" className="text-light mt-5 mb-2">
-              <i className="fa-regular fa-envelope" style={{color: '#c4fb6d'}}></i> mail@keen.co
+            <p data-aos="fade-up" data-aos-delay="200" className="contact-info">
+              <i className="fa-regular fa-envelope"></i> mail@keen.co
             </p>
-            <p data-aos="fade-up" data-aos-delay="200" className="text-light">
-              <i className="fa-solid fa-phone" style={{color: '#c4fb6d'}}></i> +123 456 789
+            <p data-aos="fade-up" data-aos-delay="200" className="contact-info">
+              <i className="fa-solid fa-phone"></i> +123 456 789
             </p>
           </div>
           {/* Col 3 20*/}
-          <div className="col-lg-2 mb-5 mb-md-0">
-            <h5 data-aos="fade-up" className="text-uppercase mb-3 font-krona-one footer-text-h-c fw-light">
+          <div className="footer-col-3">
+            <h5 data-aos="fade-up" className="footer-heading">
               MENU
             </h5>
-            <ul className="list-unstyled mt-4">
+            <ul className="footer-menu">
               {menuLinks.map((link, index) => (
                 <li 
                   key={index}
                   data-aos="fade-up" 
-                  data-aos-delay={200 + (index * 100)} 
-                  className="mb-3"
+                  data-aos-delay={200 + (index * 100)}
                 >
-                  <a href={link.href} className="text-light text-decoration-none">
+                  <a href={link.href}>
                     {link.text}
                   </a>
                 </li>
@@ -67,19 +67,18 @@ const Footer = () => {
             </ul>
           </div>
           {/* Col 4 20*/}
-          <div className="col-lg-2">
-            <h5 data-aos="fade-up" className="text-uppercase mb-3 font-krona-one footer-text-h-c fw-light">
+          <div className="footer-col-4">
+            <h5 data-aos="fade-up" className="footer-heading">
               LINKS
             </h5>
-            <ul className="list-unstyled mt-4">
+            <ul className="footer-menu">
               {otherLinks.map((link, index) => (
                 <li 
                   key={index}
                   data-aos="fade-up" 
-                  data-aos-delay={200 + (index * 100)} 
-                  className="mb-3"
+                  data-aos-delay={200 + (index * 100)}
                 >
-                  <a href={link.href} className="text-light text-decoration-none">
+                  <a href={link.href}>
                     {link.text}
                   </a>
                 </li>
@@ -88,22 +87,22 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr className="my-4" />
-        <div className="footer-bottom d-flex justify-content-between flex-column flex-md-row pt-2 pb-5">
+        <hr />
+        <div className="footer-bottom">
           <div data-aos="fade-up">
             <span>
               Powered by{' '}
-              <a href="https://sociolib.com" className="text-decoration-none">
-                <span className="text-secondary-color">SocioLib.</span>
+              <a href="https://sociolib.com">
+                <span className="highlight-text">SocioLib.</span>
               </a>
             </span>
           </div>
-          <div data-aos="fade-up" data-aos-delay="200" className="mt-3 mt-lg-0">
-            <a href="#" className="text-secondary-color text-decoration-none me-2 mx-lg-2">
+          <div data-aos="fade-up" data-aos-delay="200" className="footer-credits">
+            <a href="#" className="highlight-text">
               Privacy Policy
             </a>
-            <span>|</span>
-            <a href="#" className="text-secondary-color text-decoration-none mx-2">
+            <span> | </span>
+            <a href="#" className="highlight-text">
               Our Terms
             </a>
           </div>

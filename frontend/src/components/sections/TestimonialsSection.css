@@ -1,0 +1,177 @@
+/* TestimonialsSection Styles */
+.testimonials-section {
+  color: white;
+  background-image: url('/assets/image/testimonials-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.testimonials-section .color-cover {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4rem 0;
+}
+
+.testimonials-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.testimonials-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px 3rem -15px;
+}
+
+.testimonials-section .header-col-left {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .testimonials-section .header-col-left {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.testimonials-section .header-col-right {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .testimonials-section .header-col-right {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.testimonials-section .section-title {
+  text-transform: uppercase;
+  font-family: 'Krona One', sans-serif;
+  font-size: 2rem;
+}
+
+.testimonials-section .section-description {
+  margin-bottom: 1rem;
+}
+
+.testimonials-section .view-link {
+  color: #c4fb6d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Krona One', sans-serif;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s ease;
+}
+
+.testimonials-section .view-link:hover {
+  gap: 1rem;
+}
+
+.testimonials-section .view-link i {
+  color: #c4fb6d;
+}
+
+.testimonials-section .testimonials-scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 0 -1rem;
+  padding: 0 1rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.testimonials-section .testimonials-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonials-section .testimonials-cards-wrapper {
+  display: flex;
+  gap: 1rem;
+  min-width: min-content;
+}
+
+.testimonials-section .testimonial-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  min-width: 300px;
+  max-width: 400px;
+  flex-shrink: 0;
+}
+
+.testimonials-section .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.testimonials-section .stars {
+  color: #ffc107;
+}
+
+.testimonials-section .card-content {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.testimonials-section .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.testimonials-section .author-name {
+  margin-bottom: 0;
+  font-family: 'Krona One', sans-serif;
+  font-weight: 300;
+}
+
+.testimonials-section .author-company {
+  color: #c4fb6d;
+  margin-top: 0.25rem;
+}
+
+.testimonials-section .quote-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.testimonials-section .testimonials-indicators {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.testimonials-section .indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.testimonials-section .indicator.active {
+  background-color: #c4fb6d;
+  width: 30px;
+  border-radius: 5px;
+}
+
+.testimonials-section .indicator:hover {
+  background-color: rgba(196, 251, 109, 0.5);
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './HeroSection.css';
 
 const HeroSection = () => {
   const [counter, setCounter] = useState(0);
@@ -24,73 +25,63 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="bg-hero h-full w-100" style={{zIndex: 1}}>
+    <section className="hero-section">
       <div className="color-cover">
-        <div className="container py-5 position-relative">
+        <div className="container">
           {/* Row 1 */}
-          <div className="row position-relative" style={{zIndex: 20}}>
+          <div className="row-1">
             {/* Col 1 */}
-            <div className="col-12 col-lg-7 mt-lg-5 pe-lg-5">
-              <h1 className="transition-fade-left text-uppercase font-krona-one text-white hero-text mb-0">
+            <div className="hero-content">
+              <h1 className="hero-text transition-fade-left">
                 Creative
               </h1>
-              <h1 className="transition-fade-left text-uppercase font-krona-one text-white hero-text mb-0 d-flex justify-content-end">
+              <h1 className="hero-text text-right transition-fade-left">
                 Digital
               </h1>
-              <h1 className="transition-fade-left text-uppercase font-krona-one border-text hero-text mb-0 d-flex justify-content-center">
+              <h1 className="hero-text border-text text-center transition-fade-left">
                 Agency
               </h1>
             </div>
             {/* Col 2 */}
-            <div className="col-12 col-lg-5 d-flex justify-content-center align-items-center align-items-lg-end justify-content-lg-start flex-column mt-5 pt-0 pe-0 pt-lg-5 pe-lg-5">
-              <div className="d-flex align-items-cente justify-content-center">
-                <div className="transition-fade-right d-flex flex-column justify-content-center align-items-center">
-                  <div className="d-flex">
-                    <h1 className="h1-text display-lg-5 fw-bold text-white font-krona-one mb-0">
-                      {counter}
-                    </h1>
-                    <h1 className="h1-text display-lg-5 fw-bold text-white font-krona-one mb-0">
-                      K
-                    </h1>
-                  </div>
-                  <p className="text-uppercase fw-semibold font-krona-one mb-0 text-secondary" style={{fontSize: '12px'}}>
-                    4.59 Rating
-                  </p>
-                  <div>
-                    <img src="/assets/icons/startGold.png" style={{fontSize: '2px'}} alt="" />
-                    <img src="/assets/icons/startGold.png" style={{fontSize: '25px'}} alt="" />
-                    <img src="/assets/icons/startGold.png" style={{fontSize: '25px'}} alt="" />
-                    <img src="/assets/icons/startGold.png" style={{fontSize: '25px'}} alt="" />
-                    <img src="/assets/icons/startGold.png" style={{fontSize: '25px'}} alt="" />
-                  </div>
+            <div className="rating-container">
+              <div className="rating-content transition-fade-right">
+                <div className="rating-number">
+                  <h1>{counter}</h1>
+                  <h1>K</h1>
+                </div>
+                <p className="rating-label">
+                  4.59 Rating
+                </p>
+                <div className="star-rating">
+                  <img src="/assets/icons/startGold.png" alt="star" />
+                  <img src="/assets/icons/startGold.png" alt="star" />
+                  <img src="/assets/icons/startGold.png" alt="star" />
+                  <img src="/assets/icons/startGold.png" alt="star" />
+                  <img src="/assets/icons/startGold.png" alt="star" />
                 </div>
               </div>
             </div>
           </div>
 
           {/* Row 2 */}
-          <div className="row position-relative cutom-bottom mt-5 mt-lg-0" style={{zIndex: 10}}>
+          <div className="row-2">
             {/* Col 1 */}
-            <div className="col-12 col-lg-3 d-flex align-items-center">
-              <p className="transition-fade-left text-white sub-text-medium">
+            <div className="description transition-fade-left">
+              <p>
                 Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
                 leo adipiscing elit.
               </p>
             </div>
             {/* Col 2 */}
-            <div className="transition-fade-up col-12 col-lg-9 d-flex flex-column flex-lg-row align-items-end overflow-hidden">
-              <img src="/assets/image/42.jpg" className="w-100" alt="" />
+            <div className="image-button-container transition-fade-up">
+              <img src="/assets/image/42.jpg" className="hero-image" alt="Hero" />
               <div 
                 data-aos="fade-left"
                 data-aos-duration="1000"
-                className="transition-fade-right d-flex align-items-center justify-content-center gap-2 button-padding w-full border border-0 mt-5 me-5 me-lg-0 mt-lg-0 bg-secondary-custom custom-btn-ow"
+                className="our-works-button transition-fade-right"
               >
-                <a 
-                  href="OurWorks.html" 
-                  className="mb-0 font-krona-one text-uppercase text-black text-decoration-none"
-                  style={{textWrap: 'nowrap'}}
-                >
-                  Our Works <i className="fa-solid fa-arrow-right" style={{color: '#232520'}}></i>
+                <a href="OurWorks.html">
+                  Our Works <i className="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
             </div>

@@ -1,0 +1,208 @@
+/* HeroSection Styles */
+.hero-section {
+  background-image: url('/assets/image/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero-section .color-cover {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+
+.hero-section .container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+/* Row 1 */
+.hero-section .row-1 {
+  position: relative;
+  z-index: 20;
+}
+
+.hero-section .hero-content {
+  margin-top: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 992px) {
+  .hero-section .hero-content {
+    margin-top: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.hero-section .hero-text {
+  text-transform: uppercase;
+  font-family: 'Krona One', sans-serif;
+  color: white;
+  margin-bottom: 0;
+}
+
+.hero-section .hero-text.text-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hero-section .hero-text.text-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-section .hero-text.text-center {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-section .hero-text.border-text {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+/* Rating Section */
+.hero-section .rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-top: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 992px) {
+  .hero-section .rating-container {
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-top: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.hero-section .rating-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .rating-number {
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .rating-number h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'Krona One', sans-serif;
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .hero-section .rating-number h1 {
+    font-size: 4rem;
+  }
+}
+
+.hero-section .rating-label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Krona One', sans-serif;
+  margin-bottom: 0;
+  color: #6c757d;
+  font-size: 12px;
+}
+
+.hero-section .star-rating img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Row 2 */
+.hero-section .row-2 {
+  position: relative;
+  z-index: 10;
+  margin-top: 3rem;
+}
+
+@media (min-width: 992px) {
+  .hero-section .row-2 {
+    margin-top: 0;
+  }
+}
+
+.hero-section .description {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hero-section .image-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow: hidden;
+  margin-top: 3rem;
+  margin-right: 3rem;
+}
+
+@media (min-width: 992px) {
+  .hero-section .image-button-container {
+    flex-direction: row;
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+
+.hero-section .hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-section .our-works-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  border: none;
+  margin-top: 3rem;
+  background-color: #c4fb6d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 992px) {
+  .hero-section .our-works-button {
+    width: auto;
+    margin-top: 0;
+  }
+}
+
+.hero-section .our-works-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section .our-works-button a {
+  margin-bottom: 0;
+  font-family: 'Krona One', sans-serif;
+  text-transform: uppercase;
+  color: #232520;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.hero-section .our-works-button a i {
+  color: #232520;
+}

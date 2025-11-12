@@ -1,0 +1,184 @@
+/* WhatWeDoSection Styles */
+.what-we-do-section {
+  color: white;
+  margin: 0 0.5rem;
+  position: relative;
+  padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .what-we-do-section {
+    margin: 0;
+  }
+}
+
+.what-we-do-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.what-we-do-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.what-we-do-section .content-col {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .what-we-do-section .content-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 3rem;
+  }
+}
+
+.what-we-do-section .section-title {
+  text-transform: uppercase;
+  font-family: 'Krona One', sans-serif;
+  font-size: 2rem;
+}
+
+.what-we-do-section .description {
+  margin: 1.5rem 0;
+}
+
+.what-we-do-section .services-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.what-we-do-section .services-column {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .what-we-do-section .services-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.what-we-do-section .services-list li {
+  margin-bottom: 0.75rem;
+}
+
+.what-we-do-section .all-services-link {
+  color: #c4fb6d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Krona One', sans-serif;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s ease;
+}
+
+.what-we-do-section .all-services-link:hover {
+  gap: 1rem;
+}
+
+.what-we-do-section .all-services-link i {
+  color: #c4fb6d;
+}
+
+.what-we-do-section .image-col {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .what-we-do-section .image-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 0;
+  }
+}
+
+.what-we-do-section .icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  background: rgba(35, 37, 32, 0.9);
+  border-radius: 0.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 2rem;
+  height: fit-content;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .what-we-do-section .icon-box {
+    padding: 3rem 2rem;
+    gap: 1.5rem;
+    bottom: 4rem;
+  }
+}
+
+.what-we-do-section .icon-box i {
+  color: #c4fb6d;
+  font-size: 3rem;
+}
+
+.what-we-do-section .icon-box-title {
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .what-we-do-section .icon-box-title {
+    margin: 1rem 0;
+  }
+}
+
+.what-we-do-section .icon-box-title h3 {
+  font-family: 'Krona One', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.what-we-do-section .icon-box p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .what-we-do-section .icon-box p {
+    margin-bottom: 1rem;
+  }
+}
+
+.what-we-do-section .image-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.what-we-do-section .main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
