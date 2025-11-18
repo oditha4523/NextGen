@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Header,
   Footer,
   HeroSection,
   ServicesSection,
@@ -9,7 +8,6 @@ import {
   ApproachSection,
   CounterSection,
   TestimonialsSection,
-  BlogSection,
   CTASection
 } from './components';
 
@@ -23,7 +21,7 @@ const App = () => {
 
   return (
     <>
-      <Header />
+      
       <main>
         <HeroSection />
         <ServicesSection />
@@ -32,7 +30,6 @@ const App = () => {
         <ApproachSection />
         <CounterSection />
         <TestimonialsSection />
-        <BlogSection />
         <CTASection />
       </main>
       <Footer />

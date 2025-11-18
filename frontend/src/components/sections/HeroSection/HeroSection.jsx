@@ -42,25 +42,6 @@ const HeroSection = () => {
                 Agency
               </h1>
             </div>
-            {/* Col 2 */}
-            <div className="rating-container">
-              <div className="rating-content transition-fade-right">
-                <div className="rating-number">
-                  <h1>{counter}</h1>
-                  <h1>K</h1>
-                </div>
-                <p className="rating-label">
-                  4.59 Rating
-                </p>
-                <div className="star-rating">
-                  <img src="/assets/icons/startGold.png" alt="star" />
-                  <img src="/assets/icons/startGold.png" alt="star" />
-                  <img src="/assets/icons/startGold.png" alt="star" />
-                  <img src="/assets/icons/startGold.png" alt="star" />
-                  <img src="/assets/icons/startGold.png" alt="star" />
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Row 2 */}
@@ -74,7 +55,6 @@ const HeroSection = () => {
             </div>
             {/* Col 2 */}
             <div className="image-button-container transition-fade-up">
-              <img src="/assets/image/42.jpg" className="hero-image" alt="Hero" />
               <div 
                 data-aos="fade-left"
                 data-aos-duration="1000"
